@@ -12,7 +12,7 @@ router.post("/", async (req, res) => {
 	if (!name || !price) {
 		return res
 			.status(400)
-			.json({ message: "Name va price kiritish shart" });
+			.json({ message: "Name and price are required" });
 	}
 	const product = await productModel.create({ name, price });
 	res.status(201).json({ message: "Product created", product });
