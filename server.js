@@ -35,7 +35,7 @@ app.use(express.json());
 // app.use(slower);
 app.use(
 	cors({
-		origin: ["http://localhost:5173", "http://localhost:3000"],
+		origin: ["http://localhost:5173", "http://localhost:3000", "https://gw22-front.vercel.app/"],
 		credentials: true,
 	}),
 );
